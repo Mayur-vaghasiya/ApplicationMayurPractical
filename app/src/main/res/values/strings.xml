@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">ApplicationMayur</string>
+    <string name="no_internet">Check Your Internet Connection.!!</string>
+    <string name="image_gallary">GallaryView</string>
+    <string name="evon">EVON</string>
+    <string name="skip_for_now">Skip for Now</string>
+    <string name="sign_up">Sign Up</string>
+     <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="discover_upcomming_events_n_near_you">Discover upcomming events \n near you</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="or">or</string>
+    <string name="signup_facebook">Sign Up with Facebook</string>
+    <string name="signup_google">Sign Up with Google</string>
+    <string name="already_account">Already have an account?</string>
+    <string name="dont_have_account">don\'t have an account?</string>
+    <string name="Login_facebook">Login with Facebook</string>
+    <string name="Login_google">Login with Google</string>
+    <string name="tasktwo">Tasktwo</string>
+    <string name="taskone">Taskone</string>
+
+    <string name="fullname">FullName</string>
+    <string name="username_validation">Enter Username</string>
+    <string name="empty_password">Enter Password</string>
+    <string name="email_hint_error">Enter Email</string>
+    <string name="email_validation">Enter Valid Email-Id</string>
+</resources>

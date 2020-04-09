@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.SplashActivity">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/height_width_100"
+            android:layout_height="@dimen/height_width_100"
+            android:src="@drawable/logo512" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_width_50"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/padding_margin_10"
+            android:gravity="center"
+            android:text="@string/evon"
+            android:textColor="@color/evoncolor"
+            android:textSize="@dimen/text_22" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="@dimen/height_width_45"
+            android:layout_marginStart="@dimen/height_width_30"
+            android:layout_marginTop="@dimen/padding_margin_10"
+            android:layout_marginEnd="@dimen/height_width_30"
+            android:gravity="center"
+            android:textColor="#A1A4AF"
+            android:text="@string/discover_upcomming_events_n_near_you"
+            android:textSize="@dimen/text_20" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/CommonSignupButtonStyle"
+        android:id="@+id/textviewSignUp"
+        android:layout_marginTop="40dp"
+        android:text="@string/sign_up"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textviewLogin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_width_45"
+            android:layout_gravity="center"
+            android:layout_marginVertical="@dimen/height_width_20"
+            android:layout_marginStart="@dimen/height_width_35"
+            android:layout_marginTop="@dimen/padding_margin_35"
+            android:layout_marginEnd="@dimen/height_width_35"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textColor="#87AFDE"
+            android:background="@drawable/shapselected"
+            android:textSize="@dimen/text_14" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textviewSkipnow"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_width_45"
+            android:layout_gravity="center"
+            android:layout_marginVertical="@dimen/height_width_20"
+            android:layout_marginStart="@dimen/height_width_35"
+            android:layout_marginTop="@dimen/padding_margin_10"
+            android:layout_marginEnd="@dimen/height_width_35"
+            android:gravity="center"
+            android:text="@string/skip_for_now"
+            android:textColor="#87AFDE"
+            android:textSize="@dimen/text_14" />
+
+</LinearLayout>
