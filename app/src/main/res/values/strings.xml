@@ -21,7 +21,7 @@
     <string name="taskone">Taskone</string>
 
     <string name="fullname">FullName</string>
-    <string name="username_validation">Enter Username</string>
+    <string name="username_validation">Enter FirstName</string>
     <string name="empty_password">Enter Password</string>
     <string name="email_hint_error">Enter Email</string>
     <string name="email_validation">Enter Valid Email-Id</string>

@@ -35,7 +35,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         edittextPassword = (AppCompatEditText) findViewById(R.id.edittextPassword);
         textviewAlreadyLogin = (AppCompatTextView) findViewById(R.id.textviewAlreadyLogin);
         textviewAlreadyLogin.setOnClickListener(this);
-        textviewSignUp = (AppCompatTextView) findViewById(R.id.textviewTermsCondition);
+        textviewSignUp = (AppCompatTextView) findViewById(R.id.textviewSignUp);
         textviewSignUp.setOnClickListener(this);
         textviewTermsCondition = (AppCompatTextView) findViewById(R.id.textviewTermsCondition);
         String text = "<font color=#A1A4AF>By Signig up you accept the </font>" +
