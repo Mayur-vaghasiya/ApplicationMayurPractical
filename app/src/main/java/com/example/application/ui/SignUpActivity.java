@@ -1,14 +1,22 @@
 package com.example.application.ui;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatEditText;
 import androidx.appcompat.widget.AppCompatTextView;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Html;
+import android.text.SpannableString;
+import android.text.Spanned;
+import android.text.TextPaint;
 import android.text.TextUtils;
+import android.text.method.LinkMovementMethod;
+import android.text.style.ClickableSpan;
+import android.text.style.UnderlineSpan;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
@@ -38,10 +46,43 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         textviewSignUp = (AppCompatTextView) findViewById(R.id.textviewSignUp);
         textviewSignUp.setOnClickListener(this);
         textviewTermsCondition = (AppCompatTextView) findViewById(R.id.textviewTermsCondition);
+/*
         String text = "<font color=#A1A4AF>By Signig up you accept the </font>" +
                 " <font color=#87AFDE>Terms of Service" +
-                "</font><font color=#A1A4AF> and</font>" + "</font><font color=#87AFDE> \nPrivacy Policy</font>";
-        textviewTermsCondition.setText(Html.fromHtml(text));
+                "</font><font color=#A1A4AF> and</font>" + "</font><font color=#87AFDE> \nPrivacy Policy</font>";*/
+        // textviewTermsCondition.setText(Html.fromHtml(text));
+
+        String text = "By Signig up you accept the Terms of Service and \nPrivacy Policy.";
+        SpannableString ss = new SpannableString(text);
+        ClickableSpan clickableSpan = new ClickableSpan() {
+            @Override
+            public void onClick(@NonNull View widget) {
+                Toast.makeText(activity, "Terms of Service", Toast.LENGTH_SHORT).show();
+            }
+            @Override
+            public void updateDrawState(TextPaint ds) {
+                ds.setUnderlineText(false);
+                ds.setColor(getResources().getColor(R.color.fbbackbutton));
+            }
+        };
+
+        ClickableSpan clickableSpantwo = new ClickableSpan() {
+            @Override
+            public void onClick(@NonNull View widget) {
+
+            }
+            @Override
+            public void updateDrawState(TextPaint ds) {
+                ds.setUnderlineText(false);
+                ds.setColor(getResources().getColor(R.color.fbbackbutton));
+            }
+        };
+
+        ss.setSpan(clickableSpan, 28, 44, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        ss.setSpan(clickableSpantwo, 49, 64, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        textviewTermsCondition.setText(ss);
+        textviewTermsCondition.setMovementMethod(LinkMovementMethod.getInstance());
+        textviewTermsCondition.setHighlightColor(Color.TRANSPARENT);
 
         edittextPassword.setOnEditorActionListener(new AppCompatEditText.OnEditorActionListener() {
             @Override

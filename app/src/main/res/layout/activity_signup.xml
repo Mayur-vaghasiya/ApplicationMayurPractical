@@ -91,7 +91,7 @@
                 android:id="@+id/textviewSignupwithFb"
                 style="@style/SignupfacebookButtonStyle"
                 android:layout_marginTop="@dimen/padding_margin_15"
-                android:drawableLeft="@drawable/ic_facebook"
+                android:drawableStart="@drawable/ic_facebook"
                 android:text="@string/signup_facebook"
 
                 />
@@ -100,8 +100,8 @@
                 android:id="@+id/textviewSignupwithGoogle"
                 style="@style/SignupgoogleButtonStyle"
                 android:layout_marginTop="@dimen/padding_margin_15"
-                android:drawableLeft="@drawable/ic_google_icon"
-                android:paddingLeft="@dimen/padding_margin_10"
+                android:drawableStart="@drawable/ic_google_icon"
+                android:paddingStart="@dimen/padding_margin_10"
                 android:text="@string/signup_google" />
 
             <androidx.appcompat.widget.AppCompatTextView
@@ -113,6 +113,7 @@
                 android:layout_marginTop="@dimen/padding_margin_25"
                 android:layout_marginEnd="@dimen/height_width_35"
                 android:gravity="center"
+                android:textColorLink="@color/fbbackbutton"
                 android:textSize="@dimen/text_12" />
 
             <LinearLayout
@@ -140,7 +141,7 @@
                     android:layout_height="30dp"
                     android:gravity="center"
                     android:text="@string/login"
-                    android:textColor="#87AFDE"
+                    android:textColor="@color/fbbackbutton"
                     android:textSize="@dimen/text_12" />
 
             </LinearLayout>
