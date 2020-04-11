@@ -45,6 +45,7 @@ public class GallaryAdapter extends RecyclerView.Adapter<GallaryAdapter.MyViewHo
 
         Glide.with(context).load(image.getUrl())
                 .thumbnail(0.5f)
+                .placeholder(R.drawable.image)
                 .crossFade()
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .into(holder.thumbnail);
