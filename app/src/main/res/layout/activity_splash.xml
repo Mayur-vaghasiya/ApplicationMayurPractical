@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center"
+    android:layout_gravity="bottom"
     android:background="@color/white"
     android:gravity="center"
-    android:orientation="vertical"
+    android:overScrollMode="never"
+    android:scrollIndicators="none"
+    android:scrollbars="none"
     tools:context=".ui.SplashActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="vertical">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="@dimen/height_width_100"
             android:layout_height="@dimen/height_width_100"
+            android:layout_marginTop="@dimen/padding_margin_40"
             android:src="@drawable/logo512" />
 
         <androidx.appcompat.widget.AppCompatTextView
@@ -34,18 +44,17 @@
             android:layout_marginTop="@dimen/padding_margin_10"
             android:layout_marginEnd="@dimen/height_width_30"
             android:gravity="center"
-            android:textColor="#A1A4AF"
             android:text="@string/discover_upcomming_events_n_near_you"
+            android:textColor="#A1A4AF"
             android:textSize="@dimen/text_20" />
 
-    <androidx.appcompat.widget.AppCompatTextView
-        style="@style/CommonSignupButtonStyle"
-        android:id="@+id/textviewSignUp"
-        android:layout_marginTop="40dp"
-        android:text="@string/sign_up"
-        />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textviewSignUp"
+            style="@style/CommonSignupButtonStyle"
+            android:layout_marginTop="@dimen/padding_margin_60"
+            android:text="@string/sign_up" />
 
-    <androidx.appcompat.widget.AppCompatTextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/textviewLogin"
             android:layout_width="match_parent"
             android:layout_height="@dimen/height_width_45"
@@ -54,10 +63,10 @@
             android:layout_marginStart="@dimen/height_width_35"
             android:layout_marginTop="@dimen/padding_margin_35"
             android:layout_marginEnd="@dimen/height_width_35"
+            android:background="@drawable/shapselected"
             android:gravity="center"
             android:text="@string/login"
             android:textColor="#87AFDE"
-            android:background="@drawable/shapselected"
             android:textSize="@dimen/text_14" />
 
         <androidx.appcompat.widget.AppCompatTextView
@@ -73,5 +82,5 @@
             android:text="@string/skip_for_now"
             android:textColor="#87AFDE"
             android:textSize="@dimen/text_14" />
-
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>
